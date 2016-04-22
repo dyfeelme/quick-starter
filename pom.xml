@@ -26,6 +26,7 @@
 		<module>dubbox</module>
 		<module>cxf</module>
 		<module>axis2</module>
+		<module>jibx</module>
 	</modules>
 
 	<properties>
@@ -38,22 +39,23 @@
 		<hibernate.version>5.1.0.Final</hibernate.version>
 
 		<log4j.version>2.5</log4j.version>
-		<logback.version></logback.version>
+		<logback.version />
 
-		<mina.version></mina.version>
-		<netty.version></netty.version>
+		<mina.version />
+		<netty.version />
 
-		<mysql.version></mysql.version>
-		<memcache.version></memcache.version>
-		<jedis.version></jedis.version>
-		<mongod.version></mongod.version>
+		<mysql.version />
+		<memcache.version />
+		<jedis.version />
+		<mongod.version />
 
-		<jarkata.version></jarkata.version>
+		<jarkata.version />
 		<cxf.version>3.1.6</cxf.version>
-		<axis.version></axis.version>
+		<axis.version />
 
 		<dubbo.version></dubbo.version>
-		
+		<jibx.version>1.2.6</jibx.version>
+
 		<junit.version>4.12</junit.version>
 
 	</properties>
@@ -214,11 +216,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.cxf</groupId>
-				<artifactId>cxf-rt-core</artifactId>
-				<version>${cxf.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-rt-transports-http</artifactId>
 				<version>${cxf.version}</version>
 			</dependency>
@@ -250,12 +247,49 @@
 				<version>${log4j.version}</version>
 			</dependency>
 
+			<!-- jibx -->
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>jibx-run</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>jibx-extras</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>jibx-bind</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>jibx-tools</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>jibx-schema</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>xbis-jibx</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jibx</groupId>
+				<artifactId>jibx-ws</artifactId>
+				<version>${jibx.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-test</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>

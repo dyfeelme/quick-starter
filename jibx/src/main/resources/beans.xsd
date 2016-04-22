@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://zs.com/framework/jibx/beans" elementFormDefault="qualified" targetNamespace="http://zs.com/framework/jibx/beans">
+  <xs:complexType name="account">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name" minOccurs="0"/>
+      <xs:element type="xs:string" name="skill" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="car" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="carname" minOccurs="0"/>
+          </xs:sequence>
+          <xs:attribute type="xs:long" use="required" name="id"/>
+          <xs:attribute type="xs:boolean" use="required" name="isPass"/>
+          <xs:attribute type="xs:double" name="amount"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:long" use="required" name="id"/>
+    <xs:attribute type="xs:int" use="required" name="age"/>
+    <xs:attribute type="xs:dateTime" name="birthday"/>
+  </xs:complexType>
+  <xs:element type="tns:account" name="account"/>
+</xs:schema>

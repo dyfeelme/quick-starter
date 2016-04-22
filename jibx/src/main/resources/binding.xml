@@ -1,0 +1,21 @@
+<binding xmlns:tns="http://zs.com/framework/jibx/beans" name="binding" package="com.zs.framework" trim-whitespace="true">
+  <namespace uri="http://zs.com/framework/jibx/beans" default="elements" prefix="tns"/>
+  <mapping abstract="true" type-name="tns:account" class="com.zs.framework.Account">
+    <value style="element" name="name" get-method="getName" set-method="setName" usage="optional"/>
+    <collection get-method="getSkillList" set-method="setSkillList" usage="optional" create-type="java.util.ArrayList">
+      <value style="element" name="skill" type="java.lang.String"/>
+    </collection>
+    <structure get-method="getCar" set-method="setCar" usage="optional" name="car">
+      <value style="element" name="carname" get-method="getCarname" set-method="setCarname" usage="optional"/>
+      <value style="attribute" name="id" get-method="getId" set-method="setId"/>
+      <value style="attribute" name="isPass" get-method="isIsPass" set-method="setIsPass"/>
+      <value style="attribute" name="amount" get-method="getAmount" set-method="setAmount" usage="optional"/>
+    </structure>
+    <value style="attribute" name="id" get-method="getId" set-method="setId"/>
+    <value style="attribute" name="age" get-method="getAge" set-method="setAge"/>
+    <value style="attribute" name="birthday" get-method="getBirthday" set-method="setBirthday" usage="optional"/>
+  </mapping>
+  <mapping class="com.zs.framework.Account" name="account">
+    <structure map-as="tns:account"/>
+  </mapping>
+</binding>
