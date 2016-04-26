@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.zs.framework</groupId>
 	<artifactId>quick-starter</artifactId>
@@ -30,6 +29,8 @@
 		<module>nutz-web</module>
 		<module>jfinal-web</module>
 		<module>shiro-web</module>
+    <module>quartz</module>
+    <module>quartz-web</module>
 	</modules>
 
 	<properties>
@@ -49,22 +50,22 @@
 		<shiro.version>1.2.4</shiro.version>
 
 		<log4j.version>2.5</log4j.version>
-		<logback.version />
+		<logback.version/>
 
-		<mina.version />
-		<netty.version />
+		<mina.version/>
+		<netty.version/>
 
 		<druid.version>1.0.18</druid.version>
 		<mysql.version>5.1.38</mysql.version>
-		<memcache.version />
+		<memcache.version/>
 		<jedis.version>2.8.1</jedis.version>
-		<mongod.version />
+		<mongod.version/>
 
-		<jarkata.version />
+		<jarkata.version/>
 		<cxf.version>3.1.6</cxf.version>
-		<axis.version />
+		<axis.version/>
 
-		<dubbo.version />
+		<dubbo.version/>
 		<jibx.version>1.2.6</jibx.version>
 
 		<junit.version>4.12</junit.version>
@@ -153,6 +154,18 @@
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
 				<artifactId>shiro-ehcache</artifactId>
+				<version>1.2.4</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-spring</artifactId>
+				<version>1.2.4</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-cas</artifactId>
 				<version>1.2.4</version>
 			</dependency>
 

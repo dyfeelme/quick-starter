@@ -2,12 +2,14 @@ package com.zs.framework.nutz.modules;
 
 import org.nutz.dao.QueryResult;
 import org.nutz.dao.pager.Pager;
+import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Fail;
 import org.nutz.mvc.annotation.Ok;
 
 import com.zs.framework.nutz.beans.UserProfile;
 
+@IocBean
 public class BeetlModule extends AbstractModule {
 
 	@At

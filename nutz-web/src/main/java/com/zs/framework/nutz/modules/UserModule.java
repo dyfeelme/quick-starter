@@ -45,7 +45,7 @@ public class UserModule extends AbstractModule {
 	@GET
 	@At("/login")
 	@Filters
-	@Ok("jsp:jsp.user.login")
+	@Ok("jsp:jsp.login")
 	public void loginPage() {
 	}
 
