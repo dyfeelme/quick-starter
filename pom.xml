@@ -34,6 +34,8 @@
 		<module>quartz</module>
 		<module>quartz-web</module>
 		<module>mybatis-web</module>
+		<module>struts-web</module>
+		<module>mina</module>
 	</modules>
 
 	<properties>
@@ -45,7 +47,7 @@
 
 		<!-- 3.2.16.RELEASE -->
 		<spring.version>4.2.5.RELEASE</spring.version>
-		<struts.version>2.1.16</struts.version>
+		<struts.version>2.3.28.1</struts.version>
 		<mybatis.version>3.4.0</mybatis.version>
 		<hibernate.version>5.1.0.Final</hibernate.version>
 
@@ -55,7 +57,7 @@
 		<log4j.version>2.5</log4j.version>
 		<logback.version />
 
-		<mina.version />
+		<mina.version>2.0.13</mina.version>
 		<netty.version />
 
 		<druid.version>1.0.18</druid.version>
@@ -138,6 +140,51 @@
 				<groupId>redis.clients</groupId>
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
+			</dependency>
+
+			<!-- struts -->
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-core</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-spring-plugin</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-junit-plugin</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-convention-plugin</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-json-plugin</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-sitemesh-plugin</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>opensymphony</groupId>
+				<artifactId>sitemesh</artifactId>
+				<version>2.4.2</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-rest-plugin</artifactId>
+				<version>${struts.version}</version>
 			</dependency>
 
 
@@ -232,6 +279,33 @@
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
 				<version>1.0.0.GA</version>
+			</dependency>
+
+			<!-- mina -->
+			<dependency>
+				<groupId>org.apache.mina</groupId>
+				<artifactId>mina-core</artifactId>
+				<version>${mina.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.mina</groupId>
+				<artifactId>mina-filter-ssl</artifactId>
+				<version>${mina.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.mina</groupId>
+				<artifactId>mina-integration-jmx</artifactId>
+				<version>${mina.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.mina</groupId>
+				<artifactId>mina-integration-beans</artifactId>
+				<version>${mina.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.mina</groupId>
+				<artifactId>mina-integration-spring</artifactId>
+				<version>${mina.version}</version>
 			</dependency>
 
 			<!-- mybatis -->
