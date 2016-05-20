@@ -72,10 +72,12 @@
 
 		<dubbo.version />
 		<jibx.version>1.2.6</jibx.version>
+		<zookeeper.version>3.4.8</zookeeper.version>
 
 		<junit.version>4.12</junit.version>
 
 		<jsch.version>0.1.53</jsch.version>
+		<guava.version>18.0</guava.version>
 
 		<!-- plugins -->
 		<plugin.antrun.version>1.8</plugin.antrun.version>
@@ -449,6 +451,20 @@
 				<artifactId>jsch</artifactId>
 				<version>${jsch.version}</version>
 			</dependency>
+
+			<!-- guava -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+			
+			<!-- zookeeper -->
+			<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${zookeeper.version}</version>
+		</dependency>
 
 
 			<!-- jibx -->
